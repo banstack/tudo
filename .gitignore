@@ -52,3 +52,9 @@ coverage.xml
 
 # Sphinx documentation
 docs/_build/
+
+# Self documentation
+todos.md
+
+# Remove venv
+*venv
