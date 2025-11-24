@@ -48,7 +48,7 @@ def update_todo(session: Session, todo_id: int, todo_update: TodoUpdate) -> Opti
     for key, value in update_data.items():
         setattr(db_todo, key, value)
     
-    db_todo.updated_at = datetime.now(datetime.timezone.utc)()
+    db_todo.updated_at = datetime.utcnow()
 
     session.add(db_todo)
     session.commit()

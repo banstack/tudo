@@ -121,7 +121,7 @@ def get_status(session: Session = Depends(get_session)):
     by_priority = {
         "low": sum(1 for todo in all_todos if todo.priority == Priority.LOW),
         "medium": sum(1 for todo in all_todos if todo.priority == Priority.MEDIUM),
-        "high": sum(1 for todo in all_todos if todo.priority == Priority.high),
+        "high": sum(1 for todo in all_todos if todo.priority == Priority.HIGH),
     }
 
     return {
