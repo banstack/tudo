@@ -8,7 +8,7 @@ when you keep the scope lean and reduce your pre-optimization
 ## How to run
 
 Our Python REST service has a Dockerfile which allows us to easily run our application via the following command
-```
+```bash
 docker-compose up --build
 ```
 
